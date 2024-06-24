@@ -1,11 +1,9 @@
-def frec_abs(datos_entrada):
-    datos_entrada.sort()
-    clases, fa_absoluta = [], []
-    for elemento in datos_entrada:
-        if elemento not in clases:
-            clases.append(elemento)
-            fa_absoluta.append(1)
-        else:        
-            idx = clases.index(elemento)        
-            fa_absoluta[idx] += 1
-    return clases, fa_absoluta  
+Clases=[2,4,5,6,7,7,8,9,9,6]
+def clase(clases):
+    "aqui los datos de entrada"
+    return (Clases)
+
+
+
+
+
