@@ -13,8 +13,8 @@ print("Clases ordenadas:")
 print(Clases_ordenadas)
 print()
 
-    # Sección 3: Frecuencia absoluta
+    # Sección 3: Frecuencia acum
 resultado = frecuencia(Clases_ordenadas)
-print("Frecuencia absoluta:")
+print("Frecuencia acum:")
 for valor, f in resultado.items():
         print(f"Valor {valor}: {f}")

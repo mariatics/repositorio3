@@ -2,13 +2,13 @@
 from clases import Clases
 
 def frecuencia(Frec):
-    frecuencia_absoluta = {}
+    frecuencia_acum = {}
     for valor in Frec:
-        if valor in frecuencia_absoluta:
-            frecuencia_absoluta[valor] += 1
+        if valor in frecuencia_acum:
+            frecuencia_acum[valor] += 1
         else:
-            frecuencia_absoluta[valor] = 1
-    return frecuencia_absoluta
+            frecuencia_acum[valor] = 1
+    return frecuencia_acum
 
 
 
@@ -29,6 +29,6 @@ print()
 
     # Sección 3: Frecuencia absoluta
 resultado = frecuencia(Clases_ordenadas)
-print("Frecuencia absoluta:")
+print("Frecuencia acum:")
 for valor, f in resultado.items():
         print(f"Valor {valor}: {f}")
